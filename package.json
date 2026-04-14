@@ -3,20 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@clerk/nextjs": "^7.1.0",
+    "@clerk/themes": "^2.4.57",
+    "@prisma/client": "^7.7.0",
+    "@vonage/auth": "^1.15.0",
+    "@vonage/server-sdk": "^3.27.0",
+    "@vonage/video": "^1.28.0",
+    "date-fns": "^4.1.0",
     "next": "16.2.3",
+    "opentok": "^2.23.1",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
+    "prisma": "^7.7.0",
     "tailwindcss": "^4"
   }
 }
