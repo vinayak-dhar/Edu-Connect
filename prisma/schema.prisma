@@ -93,6 +93,9 @@ model Payout {
   processedAt DateTime?
   processedBy String?
   doctor      User         @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([doctorId, status])
 }
 
 enum UserRole {
