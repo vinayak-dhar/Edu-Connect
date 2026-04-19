@@ -124,7 +124,14 @@
   body {
     @apply bg-background text-foreground;
   }
-  html {
-    @apply font-sans;
-  }
 }
+
+@utility gradient {
+  @apply bg-gradient-to-b from-pink-500 to-blue-400;
+}
+/* bg-gradient-to-b means top to bottom */
+
+@utility gradient-title {
+  @apply gradient font-bold text-transparent bg-clip-text pb-1 pr-2;
+}
+
