@@ -24,7 +24,7 @@ export default async function Header() {
     return (
         <header className='fixed top-0 w-full border-b bg-background/90 backdrop-blur-md z-30 supports-[backdrop-filter]:bg-background/80'>
             <nav className='container mx-auto px-4 h-16 flex items-center justify-between'>
-                <Link href="/" className=''>
+                <Link href="/" className='flex items-center gap-2 cursor-pointer'>
                     <Image
                         src="/logo112.png"
                         alt="EduConnect Logo"
@@ -150,8 +150,31 @@ export default async function Header() {
                             appearance={{
                                 elements: {
                                     avatarBox: "w-10 h-10",
-                                    userButtonPopoverCard: "shadow-xl",
+                                    userButtonPopoverCard: "shadow-xl bg-zinc-950/95 border border-zinc-800 backdrop-blur-md",
+                                    userButtonPopoverFooter: "bg-zinc-950/95 border-t border-zinc-800",
                                     userPreviewMainIdentifier: "font-semibold",
+                                },
+                            }}
+                            userProfileProps={{
+                                appearance: {
+                                    variables: {
+                                        colorModalBackdrop: "rgba(0, 0, 0, 0.78)",
+                                    },
+                                    elements: {
+                                        modalBackdrop: "bg-black/70 backdrop-blur-[1px]",
+                                        modalContent: "rounded-2xl overflow-hidden border border-zinc-700/70 bg-zinc-900/95 shadow-2xl",
+                                        cardBox: "bg-transparent",
+                                        card: "bg-zinc-900/95 border-0 shadow-none",
+                                        navbar: "bg-gradient-to-b from-zinc-600/35 via-zinc-800/20 to-zinc-900/10 backdrop-blur-md border-r border-white/10",
+                                        navbarButtons: "gap-1",
+                                        navbarButton: "rounded-md text-zinc-200 hover:bg-white/10",
+                                        navbarButtonIcon: "text-zinc-300",
+                                        navbarButtonText: "text-zinc-200",
+                                        // profilePage: "bg-zinc-900/95",
+                                        footer: "bg-gradient-to-t from-orange-500/10 via-zinc-900/60 to-transparent border-t border-white/10",
+                                        footerPages: "bg-transparent",
+                                        footerPagesLink: "text-zinc-300 hover:text-white",
+                                    },
                                 },
                             }}
                             afterSignOutUrl="/"
