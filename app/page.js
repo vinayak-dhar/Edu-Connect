@@ -17,9 +17,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/50 to-background"></div>
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
 
-        <div className="constainer mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="sapce-y-8">
+            <div className="space-y-8">
               <div className="inline-flex items-center space-x-2 bg-gradient-to-br from-black-900/30 via-purple-900/40 to-black-900/30 px-4 py-2 rounded-full border border-indigo-700/30 backdrop-blur-sm">
                 <Sparkles className="h-4 w-4 text-pink-400 animate-pulse" />
                 <span className="text-pink-300 text-sm font-medium">Transform Your Learning Journey</span>
@@ -31,7 +31,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-muted-foreground text-xl max-w-lg leading-relaxed">
-                Experienced personalized mentorship through video consultations,
+                Experience personalized mentorship through video consultations,
                 structured learning paths, and continuous support.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -217,7 +217,7 @@ export default function Home() {
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
-                          xmlms="http://www.w3.org/2000/svg"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
                             strokeLinecap="round"
@@ -251,7 +251,7 @@ export default function Home() {
               Success Stories
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              What Our Communit <br />
+              What Our Community <br />
               <span className="bg-gradient-to-r from-sky-400 via-purple-500 to-pink-400 text-transparent bg-clip-text animate-gradient">
                 Says
               </span>
@@ -262,7 +262,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:*:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
@@ -270,7 +270,7 @@ export default function Home() {
               >
                 <CardContent className="p-6">
                   <div className="flex items-center mb-6">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex item-center justify-center mr-4">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center mr-4">
                       <span className="text-white font-bold text-lg">
                         {testimonial.initials}
                       </span>
@@ -301,7 +301,7 @@ export default function Home() {
             <CardContent className="p-12 md:p-16 lg:p-20 relative overflow-hidden">
               <div className="max-w-3xl relative z-10">
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-                  Read to Transform Your <br />
+                  Ready to Transform Your <br />
                   <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 text-transparent bg-clip-text animate-gradient">
                     Learning Journey?
                   </span>

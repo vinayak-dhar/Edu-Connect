@@ -135,3 +135,81 @@
   @apply gradient font-bold text-transparent bg-clip-text pb-1 pr-2;
 }
 
+.hero-title {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight text-center;
+}
+
+.text-glow {
+  color: white;
+  position: relative;
+  animation: colorfulGlow 2s ease-in-out infinite;
+}
+
+/* Glowing multi-color animated text-shadow */
+@keyframes colorfulGlow {
+  0% {
+    text-shadow: 
+      0 0 8px #ff00c8,
+      0 0 16px #fd581c,
+      0 0 24px #1a00ff;
+  }
+  50% {
+    text-shadow: 
+      0 0 12px #ff2020,
+      0 0 20px #ffe565,
+      0 0 28px #00f0ff;
+  }
+  100% {
+    text-shadow: 
+      0 0 8px #ff5252,
+      0 0 16px #55ff00,
+      0 0 24px #a200ff;
+  }
+}
+
+.badge-glow {
+  position: relative;
+  z-index: 1;
+  animation: rotateGlow 4s linear infinite;
+}
+
+/* Animated colorful glowing shadow */
+@keyframes rotateGlow {
+  0% {
+    box-shadow:
+      0 0 8px #ff00c8,
+      0 0 12px #00f0ff,
+      0 0 16px #00ff95;
+  }
+  25% {
+    box-shadow:
+      0 0 12px #00ff95,
+      0 0 18px #ff00c8,
+      0 0 22px #00f0ff;
+  }
+  50% {
+    box-shadow:
+      0 0 8px #00f0ff,
+      0 0 14px #00ff95,
+      0 0 20px #ff00c8;
+  }
+  75% {
+    box-shadow:
+      0 0 10px #ff00c8,
+      0 0 16px #00f0ff,
+      0 0 24px #00ff95;
+  }
+  100% {
+    box-shadow:
+      0 0 8px #ff00c8,
+      0 0 12px #00f0ff,
+      0 0 16px #00ff95;
+  }
+}
+
+
+.text-outline-white {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white; /* For future compatibility */
+}
