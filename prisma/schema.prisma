@@ -50,7 +50,7 @@ model Availability {
 }
 
 model Appointment {
-  id                 String            @id @default(ulid())
+  id                 String            @id @default(uuid())
   patientId          String
   doctorId           String
   startTime          DateTime
@@ -70,7 +70,7 @@ model Appointment {
 }
 
 model CreditTransaction {
-  id        String          @id @default(ulid())
+  id        String          @id @default(uuid())
   userId    String
   amount    Int
   type      TransactionType
@@ -80,7 +80,7 @@ model CreditTransaction {
 }
 
 model Payout {
-  id          String       @id @default(ulid())
+  id          String       @id @default(uuid())
   doctorId    String
   amount      Float
   credits     Int
