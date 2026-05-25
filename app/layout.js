@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
                   </div>
                 </div>
                 <div className="border-t border-gray-700 pt-6 text-center">
-                  <p className="text-white text-sm">Made By Sparsh Sharma</p>
+                  <p className="text-white text-sm">Made By Vinayak Dhar</p>
                 </div>
               </div>
             </footer>
