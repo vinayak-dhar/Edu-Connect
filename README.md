@@ -8,6 +8,10 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)
 
+## Live Demo
+
+🚀 Deployment Link: [EduConnect](https://edu-connect-lac-beta.vercel.app/)
+
 ## Overview
 
 EduConnect is a comprehensive, full-stack education consultation platform that enables seamless appointment scheduling between students and verified education professionals. The platform provides real-time video consultation capabilities, credit-based booking system, and robust admin management tools.
